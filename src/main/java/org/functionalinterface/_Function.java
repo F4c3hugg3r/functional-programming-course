@@ -1,7 +1,6 @@
-package org.example;
+package org.functionalinterface;
 
 import java.util.function.BiFunction;
-import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class _Function {
@@ -26,6 +25,9 @@ public class _Function {
 
         //BiFunctions
         System.out.println(incrementAndMultiply.apply(1, 10));
+
+        BiFunction<Integer, Integer, Integer> incrementAndDoubleMultiply = incrementAndMultiply.andThen(multiplyBy10);
+        System.out.println(incrementAndDoubleMultiply.apply(1, 10));
 
     }
 
