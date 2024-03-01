@@ -1,9 +1,11 @@
 package org.functionalinterface;
 
+import java.util.Set;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class _Consumer {
+
     public static void main(String[] args) {
         timesTenConsumer.accept(1);
         incrementPlusCommentConsumer.accept(1, "Super gemacht");
