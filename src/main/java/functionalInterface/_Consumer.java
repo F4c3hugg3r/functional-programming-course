@@ -1,4 +1,4 @@
-package org.functionalinterface;
+package functionalInterface;
 
 import java.util.Set;
 import java.util.function.BiConsumer;
